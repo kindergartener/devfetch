@@ -1,0 +1,34 @@
+{
+  "name": "devfetch",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kindergartener",
+  "license": "MIT",
+  "description": "A command-line github profile information tool made with oclif",
+  "bin": {
+    "devfetch": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "devfetch",
+    "commands": {
+      "strategy": "single",
+      "target": "./src/index.js"
+    },
+    "dirname": "devfetch",
+    "topicSeparator": " "
+  },
+  "dependencies": {
+    "@oclif/core": "^4.0.17",
+    "axios": "^1.7.3",
+    "get-pixels": "^3.3.3",
+    "terminal-kit": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.42",
+    "ts-node": "^10.9.2"
+  }
+}
